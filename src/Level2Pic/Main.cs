@@ -315,5 +315,27 @@ namespace Level2Pic
             this.labelStatus.Text = "Canceling...";
             this.converter.CancelAsync();
         }
+
+        private void toolstripmenuSaveMap_Click(object sender, EventArgs e)
+        {
+            var dialog = new SaveFileDialog()
+            {
+                Title = "Save Level Map",
+                Filter = "PNG File (*.png)|*.png"
+            };
+            if (dialog.ShowDialog() == DialogResult.Cancel)
+            {
+                return;
+            }
+
+            this.pictureboxMain.Image.Save(dialog.FileName);
+        }
+
+        private void toolstripmenuCopy_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetImage(this.pictureboxMain.Image);
+
+            this.statusMain.Text = "Level map copied to the clipboard";
+        }
     }
 }
