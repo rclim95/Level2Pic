@@ -10,11 +10,9 @@ Level2Pic is a simple desktop app that allows you to make maps of levels made in
 
 ### Screenshots
 
-[<img src="docs/assets/Level2Pic.png" width="200" />](docs/assets/Level2Pic.png)
-
-[<img src="docs/assets/Level2Pic.Properties.png" width="200" />](docs/assets/Level2Pic.Properties.png)
-
-[<img src="docs/assets/Level2Pic.Warnings.png" width="200" />](docs/assets/Level2Pic.Warnings.png)
+[<img src="docs/assets/Level2Pic.png" height="200" />](docs/assets/Level2Pic.png) 
+[<img src="docs/assets/Level2Pic.Properties.png" height="200" />](docs/assets/Level2Pic.Properties.png)
+[<img src="docs/assets/Level2Pic.Warnings.png" height="200" />](docs/assets/Level2Pic.Warnings.png)
 
 ## License
 
@@ -22,7 +20,6 @@ The project code is licensed under the MIT License. For more information, see [L
 
 Super Mario Bros. is a trademark and property of Nintendo. All assets and sprites that are used for making level maps are property of Nintendo. All rights reserved of their respective owners. This project is neither affiliated nor endorsed by Nintendo or pouetpu.
 
-----
 
 ## Background
 
