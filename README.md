@@ -2,17 +2,30 @@
 
 Level2Pic is a simple desktop app that allows you to make maps of levels made in Super Mario Flash v3.0, a fan-made Mario game by [pouetpu](http://www.pouetpu-games.com/).
 
-## Features
+Level2Pic allows you to:
 
 * Load levels from a Super Mario Flash v3.0 level code directly or from a website
 * See a preview of your level map before saving it or copying it to a clipboard
-* View interesting information or statistics about a level
+* View interesting information and statistics about a level
 
-### Screenshots
+## Screenshots
 
 [<img src="docs/assets/Level2Pic.png" height="200" />](docs/assets/Level2Pic.png) 
 [<img src="docs/assets/Level2Pic.Properties.png" height="200" />](docs/assets/Level2Pic.Properties.png)
 [<img src="docs/assets/Level2Pic.Warnings.png" height="200" />](docs/assets/Level2Pic.Warnings.png)
+
+
+----
+
+## Building Level2Pic
+
+To build Level2Pic, you will need Visual Studio 2017. You can get a copy of the community edition (for free) [here](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15). Make sure that you install the _.NET desktop development_ workload in the Visual Studio Installer.
+
+Once you have done that:
+
+1. Open up `Level2Pic.sln` in Visual Studio.
+2. Go to _Build_ and then select _Build Solution_.
+3. To launch Level2Pic, go to _Debug_ and then select _Start Without Debugging_.
 
 ## License
 
@@ -20,6 +33,7 @@ The project code is licensed under the MIT License. For more information, see [L
 
 Super Mario Bros. is a trademark and property of Nintendo. All assets and sprites that are used for making level maps are property of Nintendo. All rights reserved of their respective owners. This project is neither affiliated nor endorsed by Nintendo or pouetpu.
 
+----
 
 ## Background
 
