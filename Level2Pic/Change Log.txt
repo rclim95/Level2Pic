@@ -1,0 +1,48 @@
+﻿Level2Pic v2.5.0.0 - 2011
+    - NEW:      Links to the Level Portal and Super Mario Flash have been added (available via the Help menu)
+    - NEW:      You can now edit the properties of a Super Mario Flash level code.
+    - NEW:      You can now set the default zone(s) to render when you load a new level
+    - NEW:      View the tiles used, the number of time it have been used, and the percentage the tile makes up the level.
+    - CHANGE:   Level2Pic's classes that renders the level and gathers level information have been moved into its own file. .NET Framework Developers who uses a supported language (VB.NET, C#, for example) can use this to retrieve level information or even create a level map (must supply graphics however).
+    - CHANGE:   The way Level2Pic draws a level map and renders it.
+    - CHANGE:   Some dialogs have minor interface changes
+    - CHANGE:   Some minor changes to the main Level2Pic window
+    - CHANGE:   In the "Property" panel of the main Level2Pic window, the list of available properties to set have been removed. It have been compacted into one "page."
+    - CHANGE:   Critical errors aren't shown automatically when you load a level with errors. View the "Error and Warning" dialog in order to see the critical errors.
+    - CHANGE:   You can now turn on or turn off the ability to create a level map automatically as soon as you load it
+    - CHANGE:   You can now turn on or turn off the ability to preview a level
+    - CHANGE:   Sprites and backgrounds have been "compacted" into its two files: Tiles and Enemies.png and Backgrounds.png
+    - CHANGE:   Level2Pic doesn't automatically check for updates unless you explicitly allow it to check for updates via Help -> Check for Updates
+	- REMOVE:	The ability to move the toolbar all over the place
+	- REMOVE:   The ability to view the properties information in the "Multiple Level Found" dialog.
+    - REMOVE:	"Set Default Properties" in the Tools menu. You can go to Tools -> Options -> Default Properties tab.
+	- REMOVE:   The pie chart found in the "Properties" dialog. It required an unnecessary library, and when it isn't installed, Level2Pic complains about a missing library.
+Level2Pic v2.1.0.0 - September 18, 2010
+    - The Check for Updates dialog will still display the progress bar when it states it wasn't able to check for updates. Fixed.
+    - Level2Pic, if it detects an error while attempting to check for updates, will now display a reason inside the text box.
+    - Change the info dialog's title text to the level's name follow by "'s Info"
+    - Center the About dialog to the parent form
+    - Fix some grammar issues in the Warning dialog
+    - Pressing "Download" in the Check for Updates dialog will take you to the download link AND close the dialog for you.
+    - The program will automatically check for updates on startup and notify you in the status bar if there's one available.
+    - Disabled "Render Level Again" to prevent an error if the user pressed "Render Level Again" again
+    - Added "Render Level Again" to the tool bar
+    - Added a dialog that allows you to set the default properties to use when Level2Pic loads a level and converts
+    - Added the ability to move the tool bar wherever you want (although Level2Pic won't remember the position of the toolbar)
+Level2Pic v2.0.0.0 - September 12, 2010
+    - Major redesigned interface
+    - Graphics Manager (Allows you to manage the graphics Level2Pic uses)
+    - Check for Update
+    - Download level from the Internet (Must be inside a textarea tag)
+    - Live Preview (Credit goes to Jan for this idea)
+    - Pie Chart for showing the amount of each item used
+    - Level2Pic will automatically convert your main zone and the bonus room and store it inside a folder in your %TEMP% directory; this will allow faster conversion for the same level you want to convert
+    - The ability to save images that are converted into a specific folder has been removed
+    - You can change the background of the description area to use the default linear blue gradient, a solid color, or a picture
+    - You can change the text appearance of the description area, such as the color, and to autosize the text or not
+    - If you convert one zone, you can change the label's text, the text's appearance such as color and opacity, and the position of the text
+    - Warp graphics have been changed to make it look sharper
+    - The time it takes to convert the level is shown in the status bar.
+Level2Pic v1.0.0.0 - March 28, 2010
+    - Initial release.
+
