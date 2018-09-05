@@ -1,5 +1,7 @@
 ﻿# Level2Pic
 
+[![Build Status](https://travis-ci.com/rclim95/Level2Pic.svg?branch=develop)](https://travis-ci.com/rclim95/Level2Pic)
+
 Level2Pic is a simple desktop app that allows you to make maps of levels made in Super Mario Flash v3.0, a fan-made Mario game by [pouetpu](http://www.pouetpu-games.com/).
 
 Level2Pic allows you to:
