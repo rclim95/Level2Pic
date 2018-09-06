@@ -4,7 +4,7 @@
 // This project is licensed under the MIT License. For more information, see LICENSE.md.
 // </copyright>
 
-namespace Level2Pic.Tests.Core
+namespace Level2Pic.Core.Tests
 {
     using Level2Pic.Core;
     using Xunit;
