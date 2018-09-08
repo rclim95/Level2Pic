@@ -27,10 +27,5 @@ namespace Level2Pic.Core
         /// Gets or sets the name of the tile.
         /// </summary>
         public string Name { get; set; }
-
-        /// <summary>
-        /// Gets or sets the texture to use to show this tile.
-        /// </summary>
-        public Texture Texture { get; set; }
     }
 }
