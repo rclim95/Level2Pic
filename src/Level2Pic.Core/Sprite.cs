@@ -18,6 +18,17 @@ namespace Level2Pic.Core
     public class Sprite
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="Sprite" /> class.
+        /// </summary>
+        /// <param name="position">The position of the sprite (relative to the spritesheet that this sprite belongs to).</param>
+        /// <param name="size">The size of the sprite (in pixels).</param>
+        public Sprite(Point position, Size size)
+        {
+            this.Position = position;
+            this.Size = size;
+        }
+
+        /// <summary>
         /// Gets or sets how the sprite should be flipped.
         /// </summary>
         public FlipType FlipType { get; set; }
@@ -28,19 +39,23 @@ namespace Level2Pic.Core
         public RotateType RotateType { get; set; }
 
         /// <summary>
-        /// Gets or sets the text used to label the sprite.
+        /// Gets the location of the sprite relative to the spritesheet it belongs to.
         /// </summary>
-        public string Label { get; set; }
+        public Point Position { get; }
 
         /// <summary>
-        /// Gets or sets the location of the sprite relative to the spritesheet it belongs to.
+        /// Gets the size of the sprite relative to the spritesheet it belongs to.
         /// </summary>
-        public Point Position { get; set; }
+        public Size Size { get; }
 
         /// <summary>
-        /// Gets or sets the size of the sprite relative to the spritesheet it belongs to.
+        /// Gets the spritesheet that this sprite belongs to.
         /// </summary>
-        public Size Size { get; set; }
+        /// <remarks>
+        /// This property will be <c>null</c> unless the <see cref="Sprite" /> gets added
+        /// to a <see cref="SpriteSheet" />.
+        /// </remarks>
+        public SpriteSheet SpriteSheet { get; internal set; }
 
         /// <summary>
         /// Gets the <see cref="Rectangle" /> that contains the bound of the sprite in respect to
