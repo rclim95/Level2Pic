@@ -7,7 +7,7 @@
 namespace Level2Pic.Core
 {
     /// <summary>
-    /// Defines the possible ways that a <see cref="Texture" /> can be flipped.
+    /// Defines the possible ways that a <see cref="Sprite" /> can be flipped.
     /// </summary>
     public enum FlipType
     {

@@ -9,7 +9,7 @@ namespace Level2Pic.Core
     using System;
 
     /// <summary>
-    /// Defines the possible ways that a <see cref="Texture" /> can be rotated.
+    /// Defines the possible ways that a <see cref="Sprite" /> can be rotated.
     /// </summary>
     public enum RotateType
     {

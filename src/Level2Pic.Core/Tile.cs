@@ -27,5 +27,10 @@ namespace Level2Pic.Core
         /// Gets or sets the name of the tile.
         /// </summary>
         public string Name { get; set; }
+
+        /// <summary>
+        /// Gets or sets the sprite that should be used to represent this tile visually.
+        /// </summary>
+        public Sprite Sprite { get; set; }
     }
 }
