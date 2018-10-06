@@ -95,14 +95,6 @@ namespace Level2Pic.Core
                     "The sprite is outside the dimensions of this spritesheet");
             }
 
-            // Ensure that the sprite does not already exist in the spritesheet.
-            if (this.Contains(sprite))
-            {
-                throw new ArgumentException(
-                    "The sprite already exists in the spritesheet",
-                    nameof(sprite));
-            }
-
             sprite.SpriteSheet = this;
             this.sprites.Add(sprite);
         }
@@ -114,7 +106,7 @@ namespace Level2Pic.Core
         {
             // We need to set SpriteSheet for each Sprite to null, since the sprite is no longer
             // associated with the SpriteSheet.
-            for (int i = this.sprites.Count; i >= 0; i--)
+            for (int i = this.sprites.Count - 1; i >= 0; i--)
             {
                 this.sprites[i].SpriteSheet = null;
                 this.sprites.RemoveAt(i);
