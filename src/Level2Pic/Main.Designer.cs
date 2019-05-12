@@ -66,6 +66,8 @@
             this.panelPropertyDocker = new System.Windows.Forms.Panel();
             this.propertygridMap = new System.Windows.Forms.PropertyGrid();
             this.comboboxAreas = new System.Windows.Forms.ComboBox();
+            this.separatorProperties = new CDBurnerXP.Controls.Separator();
+            this.separatorAreas = new CDBurnerXP.Controls.Separator();
             this.panelPicture = new System.Windows.Forms.Panel();
             this.pictureboxMain = new System.Windows.Forms.PictureBox();
             this.toolstripStandard = new System.Windows.Forms.ToolStrip();
@@ -78,8 +80,6 @@
             this.toolstripbuttonErrors = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             this.toolstripbuttonRender = new System.Windows.Forms.ToolStripButton();
-            this.separatorProperties = new CDBurnerXP.Controls.Separator();
-            this.separatorAreas = new CDBurnerXP.Controls.Separator();
             this.menustripMain.SuspendLayout();
             this.statusMain.SuspendLayout();
             this.splitcontainerMain.Panel1.SuspendLayout();
@@ -190,7 +190,7 @@
             this.toolstripmenuStandard.CheckOnClick = true;
             this.toolstripmenuStandard.CheckState = System.Windows.Forms.CheckState.Checked;
             this.toolstripmenuStandard.Name = "toolstripmenuStandard";
-            this.toolstripmenuStandard.Size = new System.Drawing.Size(180, 22);
+            this.toolstripmenuStandard.Size = new System.Drawing.Size(175, 22);
             this.toolstripmenuStandard.Text = "&Standard Toolbar";
             this.toolstripmenuStandard.Click += new System.EventHandler(this.toolstripmenuStandard_Click);
             // 
@@ -201,14 +201,14 @@
             this.toolstripmenuProperty.CheckState = System.Windows.Forms.CheckState.Checked;
             this.toolstripmenuProperty.Image = global::Level2Pic.Properties.Resources.Property;
             this.toolstripmenuProperty.Name = "toolstripmenuProperty";
-            this.toolstripmenuProperty.Size = new System.Drawing.Size(180, 22);
+            this.toolstripmenuProperty.Size = new System.Drawing.Size(175, 22);
             this.toolstripmenuProperty.Text = "&Property Panel";
             this.toolstripmenuProperty.Click += new System.EventHandler(this.toolstripmenuProperty_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(172, 6);
             // 
             // toolstripmenuStatusBar
             // 
@@ -216,28 +216,28 @@
             this.toolstripmenuStatusBar.CheckOnClick = true;
             this.toolstripmenuStatusBar.CheckState = System.Windows.Forms.CheckState.Checked;
             this.toolstripmenuStatusBar.Name = "toolstripmenuStatusBar";
-            this.toolstripmenuStatusBar.Size = new System.Drawing.Size(180, 22);
+            this.toolstripmenuStatusBar.Size = new System.Drawing.Size(175, 22);
             this.toolstripmenuStatusBar.Text = "Status &Bar";
             this.toolstripmenuStatusBar.Click += new System.EventHandler(this.toolstripmenuStatusBar_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(172, 6);
             // 
             // toolstripmenuErrors
             // 
             this.toolstripmenuErrors.Enabled = false;
             this.toolstripmenuErrors.Image = ((System.Drawing.Image)(resources.GetObject("toolstripmenuErrors.Image")));
             this.toolstripmenuErrors.Name = "toolstripmenuErrors";
-            this.toolstripmenuErrors.Size = new System.Drawing.Size(180, 22);
+            this.toolstripmenuErrors.Size = new System.Drawing.Size(175, 22);
             this.toolstripmenuErrors.Text = "&Error and Warnings";
             this.toolstripmenuErrors.Click += new System.EventHandler(this.toolstripmenuErrors_Click);
             // 
             // toolstripmenuStorageFolder
             // 
             this.toolstripmenuStorageFolder.Name = "toolstripmenuStorageFolder";
-            this.toolstripmenuStorageFolder.Size = new System.Drawing.Size(180, 22);
+            this.toolstripmenuStorageFolder.Size = new System.Drawing.Size(175, 22);
             this.toolstripmenuStorageFolder.Text = "Storage &Folder";
             // 
             // toolstripmenuTools
@@ -249,7 +249,7 @@
             this.toolstripmenuManageGraphics,
             this.toolstripmenuOptions});
             this.toolstripmenuTools.Name = "toolstripmenuTools";
-            this.toolstripmenuTools.Size = new System.Drawing.Size(47, 20);
+            this.toolstripmenuTools.Size = new System.Drawing.Size(46, 20);
             this.toolstripmenuTools.Text = "&Tools";
             // 
             // toolstripmenuRender
@@ -422,6 +422,30 @@
             this.comboboxAreas.TabIndex = 1;
             this.comboboxAreas.SelectedIndexChanged += new System.EventHandler(this.comboboxAreas_SelectedIndexChanged);
             // 
+            // separatorProperties
+            // 
+            this.separatorProperties.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.separatorProperties.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.separatorProperties.Location = new System.Drawing.Point(1, 59);
+            this.separatorProperties.Name = "separatorProperties";
+            this.separatorProperties.Size = new System.Drawing.Size(259, 12);
+            this.separatorProperties.TabIndex = 0;
+            this.separatorProperties.Text = "Properties";
+            this.separatorProperties.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // separatorAreas
+            // 
+            this.separatorAreas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.separatorAreas.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.separatorAreas.Location = new System.Drawing.Point(1, 7);
+            this.separatorAreas.Name = "separatorAreas";
+            this.separatorAreas.Size = new System.Drawing.Size(259, 15);
+            this.separatorAreas.TabIndex = 0;
+            this.separatorAreas.Text = "Make Map Using...";
+            this.separatorAreas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // panelPicture
             // 
             this.panelPicture.AutoScroll = true;
@@ -542,30 +566,6 @@
             this.toolstripbuttonRender.Size = new System.Drawing.Size(23, 22);
             this.toolstripbuttonRender.Text = "&Render Level";
             this.toolstripbuttonRender.Click += new System.EventHandler(this.toolstripmenuRender_Click);
-            // 
-            // separatorProperties
-            // 
-            this.separatorProperties.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.separatorProperties.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.separatorProperties.Location = new System.Drawing.Point(1, 59);
-            this.separatorProperties.Name = "separatorProperties";
-            this.separatorProperties.Size = new System.Drawing.Size(259, 12);
-            this.separatorProperties.TabIndex = 0;
-            this.separatorProperties.Text = "Properties";
-            this.separatorProperties.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // separatorAreas
-            // 
-            this.separatorAreas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.separatorAreas.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.separatorAreas.Location = new System.Drawing.Point(1, 7);
-            this.separatorAreas.Name = "separatorAreas";
-            this.separatorAreas.Size = new System.Drawing.Size(259, 15);
-            this.separatorAreas.TabIndex = 0;
-            this.separatorAreas.Text = "Make Map Using...";
-            this.separatorAreas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Main
             // 
