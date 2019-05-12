@@ -6,8 +6,6 @@
 
 namespace Level2Pic.Core
 {
-    using System;
-
     /// <summary>
     /// Represents a tile that can be placed in a level.
     /// </summary>

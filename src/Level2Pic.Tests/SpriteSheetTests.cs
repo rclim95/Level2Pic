@@ -16,6 +16,20 @@ namespace Level2Pic.Core.Tests
     public class SpriteSheetTests
     {
         /// <summary>
+        /// Ensures that adding a null sprite (i.e., passing <c>null</c> to
+        /// <see cref="SpriteSheet.Add(Sprite)" /> results in an exception being thrown.
+        /// </summary>
+        [Fact]
+        public void TestAddNullSprite()
+        {
+            var spriteSheet = new SpriteSheet("Test.png", 32, 32);
+            Assert.Throws<ArgumentNullException>(() =>
+            {
+                spriteSheet.Add(null);
+            });
+        }
+
+        /// <summary>
         /// Ensures that adding a sprite associates the sprite with the spritesheet and exists
         /// in the spritesheet.
         /// </summary>
@@ -33,17 +47,22 @@ namespace Level2Pic.Core.Tests
         }
 
         /// <summary>
-        /// Ensures that adding a null sprite (i.e., passing <c>null</c> to
-        /// <see cref="SpriteSheet.Add(Sprite)" /> results in an exception being thrown.
+        /// Ensures that adding a sprite that already exists in another spritesheet results in an
+        /// exception when attempting to add it to a different spritesheet.
         /// </summary>
         [Fact]
-        public void TestAddNullSprite()
+        public void TestAddSpriteOfExistingSpriteSheet()
         {
             var spriteSheet = new SpriteSheet("Test.png", 32, 32);
-            Assert.Throws<ArgumentNullException>(() =>
+
+            var sprite1 = new Sprite(Point.Empty, new Size(16, 16));
+            spriteSheet.Add(sprite1);
+
+            var ex = Assert.Throws<ArgumentException>(() =>
             {
-                spriteSheet.Add(null);
+                spriteSheet.Add(sprite1);
             });
+            Assert.Contains("associated with another spritesheet", ex.Message);
         }
 
         /// <summary>
@@ -70,25 +89,6 @@ namespace Level2Pic.Core.Tests
                 spriteSheet.Add(sprite2);
             });
             Assert.True(!spriteSheet.Contains(sprite2));
-        }
-
-        /// <summary>
-        /// Ensures that adding a sprite that already exists in another spritesheet results in an
-        /// exception when attempting to add it to a different spritesheet.
-        /// </summary>
-        [Fact]
-        public void TestAddSpriteOfExistingSpriteSheet()
-        {
-            var spriteSheet = new SpriteSheet("Test.png", 32, 32);
-
-            var sprite1 = new Sprite(Point.Empty, new Size(16, 16));
-            spriteSheet.Add(sprite1);
-
-            var ex = Assert.Throws<ArgumentException>(() =>
-            {
-                spriteSheet.Add(sprite1);
-            });
-            Assert.Contains("associated with another spritesheet", ex.Message);
         }
 
         /// <summary>
@@ -135,6 +135,21 @@ namespace Level2Pic.Core.Tests
         }
 
         /// <summary>
+        /// Ensures that removing a sprite that does not exist in the spritesheet results in
+        /// <see cref="SpriteSheet.Remove(Sprite)" /> returning <c>false</c>.
+        /// </summary>
+        [Fact]
+        public void TestRemoveNonexistantSprite()
+        {
+            var sprite = new Sprite(Point.Empty, new Size(16, 16));
+            var spriteSheet = new SpriteSheet("Test.png", 32, 16);
+
+            bool isSpriteRemoved = spriteSheet.Remove(sprite);
+            Assert.False(isSpriteRemoved);
+            Assert.Null(sprite.SpriteSheet);
+        }
+
+        /// <summary>
         /// Ensures that removing a sprite disassociates it from the spritesheet and removes it
         /// from the spritesheet.
         /// </summary>
@@ -153,21 +168,6 @@ namespace Level2Pic.Core.Tests
             Assert.True(!spriteSheet.Contains(sprite1));
             Assert.Null(sprite1.SpriteSheet);
             Assert.Single(spriteSheet);
-        }
-
-        /// <summary>
-        /// Ensures that removing a sprite that does not exist in the spritesheet results in
-        /// <see cref="SpriteSheet.Remove(Sprite)" /> returning <c>false</c>.
-        /// </summary>
-        [Fact]
-        public void TestRemoveNonexistantSprite()
-        {
-            var sprite = new Sprite(Point.Empty, new Size(16, 16));
-            var spriteSheet = new SpriteSheet("Test.png", 32, 16);
-
-            bool isSpriteRemoved = spriteSheet.Remove(sprite);
-            Assert.False(isSpriteRemoved);
-            Assert.Null(sprite.SpriteSheet);
         }
     }
 }
