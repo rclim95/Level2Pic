@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{68DF09EB-5662-4804-9347-48D477CD2B80}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Level2Pic.Core", "Level2Pic.Core\Level2Pic.Core.csproj", "{5AB20A92-1E33-432C-A101-880A4F2E2D19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Level2Pic.Tests", "Level2Pic.Tests\Level2Pic.Tests.csproj", "{C0667FCA-CBCC-4B75-84B6-DC9408C71ED1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AB20A92-1E33-432C-A101-880A4F2E2D19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB20A92-1E33-432C-A101-880A4F2E2D19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB20A92-1E33-432C-A101-880A4F2E2D19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB20A92-1E33-432C-A101-880A4F2E2D19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0667FCA-CBCC-4B75-84B6-DC9408C71ED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0667FCA-CBCC-4B75-84B6-DC9408C71ED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0667FCA-CBCC-4B75-84B6-DC9408C71ED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0667FCA-CBCC-4B75-84B6-DC9408C71ED1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89928CE4-BB82-4EB7-8BEF-47C6228BD181}
+	EndGlobalSection
+EndGlobal
