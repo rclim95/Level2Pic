@@ -1,5 +1,5 @@
-﻿// <copyright file="FlipType.cs" company="rclim95 Productions">
-// Copyright © rclim95 Productions
+﻿// <copyright file="FlipType.cs" company="Limotto Productions">
+// Copyright © Limotto Productions
 //
 // This project is licensed under the MIT License. For more information, see LICENSE.md.
 // </copyright>
