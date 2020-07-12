@@ -19,7 +19,7 @@ namespace Level2Pic.Core
         /// <summary>
         /// Gets or sets the ID of the tile.
         /// </summary>
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets or sets the name of the tile.
